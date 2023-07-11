@@ -128,6 +128,10 @@ a:hover {
   width: 1140px;
 }
 
+.text-right {
+  text-align: right;
+}
+
 .header {
   display: flex;
   flex-direction: column;
@@ -144,6 +148,29 @@ a:hover {
   align-items: center;
 }
 
+.header__title {
+  position: relative;
+  padding-bottom: 121px;
+  text-align: center;
+  font-size: 48px;
+  font-family: "Playfair Display", serif;
+  color: #D4C17F;
+  font-weight: 700;
+}
+
+.header__title-icon {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 0%);
+}
+
+.header__footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
 .nav {
   font-size: 14px;
 }
@@ -152,4 +179,29 @@ a:hover {
   display: flex;
   -moz-column-gap: 40px;
        column-gap: 40px;
+}
+
+.info {
+  position: relative;
+  font-size: 18px;
+}
+.info--map, .info--tel {
+  padding-left: 35px;
+}
+.info--map::before, .info--tel::before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: 50%;
+  width: 21px;
+  height: 21px;
+  transform: translate(0%, -50%);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.info--map::before {
+  background-image: url("./../img/header/map.svg");
+}
+.info--tel::before {
+  background-image: url("./../img/header/phone.svg");
 }/*# sourceMappingURL=main.css.map */
