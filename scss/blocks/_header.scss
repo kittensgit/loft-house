@@ -1,4 +1,17 @@
 .header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    padding-top: 30px;
+    padding-bottom: 74px;
+
     min-height: 840px;
-    background: url(./../img/header/header-bg.jpg);
+    background: url('./../img/header/header-bg.jpg');
+}
+
+.header__top-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }

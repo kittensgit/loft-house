@@ -122,7 +122,34 @@ a:hover {
   color: #D4C17F;
 }
 
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
+  width: 1140px;
+}
+
 .header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 30px;
+  padding-bottom: 74px;
   min-height: 840px;
-  background: url(./../img/header/header-bg.jpg);
+  background: url("./../img/header/header-bg.jpg");
+}
+
+.header__top-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav {
+  font-size: 14px;
+}
+
+.nav__list {
+  display: flex;
+  -moz-column-gap: 40px;
+       column-gap: 40px;
 }/*# sourceMappingURL=main.css.map */
