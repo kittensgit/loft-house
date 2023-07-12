@@ -50,3 +50,16 @@ a {
     /* Prevent the screen reader to skip spaces between words */
     white-space: nowrap;
 }
+
+//to hide section
+.none {
+    display: none !important;
+}
+
+
+.title-2 {
+    color: $accent;
+    font-weight: 700;
+    font-size: 36px;
+    font-family: $font-accent;
+}
