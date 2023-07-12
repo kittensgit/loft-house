@@ -262,6 +262,53 @@ a:hover {
   font-weight: 300;
 }
 
-.appartments__title {
+.apartments__title {
   margin-bottom: 88px;
+}
+
+.apartments__cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+.card {
+  overflow: hidden;
+  position: relative;
+  display: inline-block;
+  color: #fff;
+}
+.card::after {
+  opacity: 0;
+  content: "";
+  position: absolute;
+  left: 15px;
+  top: 15px;
+  right: 15px;
+  bottom: 15px;
+  border: 3px double rgba(255, 255, 255, 0.4);
+  transition: opacity 0.2s ease-in;
+}
+.card:hover {
+  color: #fff;
+}
+.card:hover::after {
+  opacity: 1;
+}
+
+.card__img {
+  transition: all 0.2s ease-in;
+}
+
+.card:hover .card__img {
+  transform: scale(1.1);
+}
+
+.card__title {
+  position: absolute;
+  z-index: 9;
+  left: 50px;
+  right: 20px;
+  bottom: 44px;
+  font-size: 24px;
 }/*# sourceMappingURL=main.css.map */
