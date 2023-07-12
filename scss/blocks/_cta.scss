@@ -1,0 +1,28 @@
+.cta {
+    padding: 180px 0;
+    background: url('./../img/cta/cta-bg.jpg');
+}
+
+.cta__title {
+    margin-bottom: 17px;
+}
+
+.cta__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.cta__text {
+    line-height: 1.5;
+
+    p + p {
+        margin-top: 1em;
+    }
+}
+
+.cta__form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 35px 30px;
+}

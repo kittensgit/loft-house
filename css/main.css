@@ -311,4 +311,75 @@ a:hover {
   right: 20px;
   bottom: 44px;
   font-size: 24px;
+}
+
+.cta {
+  padding: 180px 0;
+  background: url("./../img/cta/cta-bg.jpg");
+}
+
+.cta__title {
+  margin-bottom: 17px;
+}
+
+.cta__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.cta__text {
+  line-height: 1.5;
+}
+.cta__text p + p {
+  margin-top: 1em;
+}
+
+.cta__form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 35px 30px;
+}
+
+.form__input {
+  height: 50px;
+  padding: 12px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  font-weight: 400;
+  font-size: 14px;
+  transition: background-color 0.2s ease-in;
+}
+.form__input::-moz-placeholder {
+  color: #BEBEBE;
+}
+.form__input::placeholder {
+  color: #BEBEBE;
+}
+.form__input:focus {
+  background-color: rgba(255, 255, 255, 0.25);
+}
+
+.form__privacy {
+  color: #E7E7E7;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.23;
+  text-align: center;
+}
+
+.form__button {
+  font-size: 16px;
+  color: #fff;
+  text-align: center;
+  font-weight: 700;
+  line-height: 1.5;
+  background-color: #D4C17F;
+  padding: 12px;
+  height: 50px;
+  transition: background-color 0.2s ease-in;
+}
+.form__button:hover {
+  background-color: #ddc676;
 }/*# sourceMappingURL=main.css.map */

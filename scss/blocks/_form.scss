@@ -1,0 +1,44 @@
+.form {}
+
+.form__input {
+    height: 50px;
+    padding: 12px;
+    text-align: center;
+    background-color: rgb(255, 255, 255, .2);
+    color: $white;
+    font-weight: 400;
+    font-size: 14px;
+    transition: background-color .2s ease-in;
+
+    &::placeholder {
+        color: $placeholder;
+    }
+
+    &:focus {
+        background-color: rgb(255, 255, 255, .25);
+    }
+}
+
+.form__privacy {
+    color: $muted;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 1.23;
+    text-align: center;
+}
+
+.form__button {
+    font-size: 16px;
+    color: $white;
+    text-align: center;
+    font-weight: 700;
+    line-height: 1.5;
+    background-color: $accent;
+    padding: 12px;
+    height: 50px;
+    transition: background-color .2s ease-in;
+
+    &:hover {
+        background-color: saturate($accent, 10%);
+    }
+}
