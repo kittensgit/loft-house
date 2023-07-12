@@ -9,7 +9,7 @@ body {
 
 a {
     color: $white;
-    transition: color .2s ease-in;
+    transition: color 0.2s ease-in;
 
     &:hover {
         color: $accent;
@@ -19,9 +19,34 @@ a {
 .container {
     margin: 0 auto;
     padding: 0 15px;
-    width: 1140px;
+    max-width: 1140px;
+
+    &--sm {
+        max-width: 840px;
+    }
 }
 
 .text-right {
     text-align: right;
+}
+
+// to hide element
+.visually-hidden {
+    /* Contain text within 1px box */
+    height: 1px;
+    overflow: hidden;
+    width: 1px;
+
+    /* Keep the layout */
+    position: absolute;
+
+    /* Remove any visible trace (e.g. background color) */
+    clip: rect(1px 1px 1px 1px);
+    /* IE6, IE7 */
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(50%);
+    /* browsers in the future */
+
+    /* Prevent the screen reader to skip spaces between words */
+    white-space: nowrap;
 }
