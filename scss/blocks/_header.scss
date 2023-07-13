@@ -6,8 +6,8 @@
     padding-top: 30px;
     padding-bottom: 74px;
 
-	min-height: 840px;
-	background: url('./../img/header/header-bg.jpg');
+    min-height: 840px;
+    background: url('./../img/header/header-bg.jpg');
 
 }
 
@@ -16,6 +16,20 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.header__nav {
+    @include mediaTablet {
+        display: none;
+    }
+}
+
+.header__nav-btn {
+    display: none;
+
+    @include mediaTablet {
+        display: block;
+    }
 }
 
 .header__title {
