@@ -164,6 +164,11 @@ a:hover {
   font-family: "Playfair Display", serif;
 }
 
+.link-bold {
+  color: #D4C17F;
+  font-weight: 700;
+}
+
 .header {
   display: flex;
   flex-direction: column;
@@ -205,6 +210,7 @@ a:hover {
 
 .nav {
   font-size: 14px;
+  letter-spacing: 0.05rem;
 }
 
 .nav__list {
@@ -446,5 +452,41 @@ a:hover {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 30px;
+  align-items: center;
+}
+
+.footer {
+  background-color: #2D343C;
+  padding-top: 72px;
+  padding-bottom: 51px;
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: 0.05rem;
+}
+
+.footer__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+.footer__logo {
+  margin-top: -12px;
+}
+
+.footer__nav-list {
+  display: grid;
+  gap: 15px;
+}
+
+.footer__address {
+  display: grid;
+  gap: 20px;
+}
+
+.footer__socials {
+  display: flex;
+  -moz-column-gap: 22px;
+       column-gap: 22px;
   align-items: center;
 }/*# sourceMappingURL=main.css.map */
