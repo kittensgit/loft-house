@@ -339,6 +339,7 @@ a:hover {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 35px 30px;
+  align-items: center;
 }
 
 .form__input {
@@ -431,4 +432,19 @@ a:hover {
 .section-map__map {
   height: 358px;
   background: #626262;
+}
+
+.feedback {
+  margin-bottom: 191px;
+}
+
+.feedback__title {
+  margin-bottom: 38px;
+}
+
+.feedback__form {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  align-items: center;
 }/*# sourceMappingURL=main.css.map */
