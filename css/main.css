@@ -176,7 +176,13 @@ a:hover {
   padding-top: 30px;
   padding-bottom: 74px;
   min-height: 840px;
-  background: url("./../img/header/header-bg.jpg");
+  background: linear-gradient(180deg, #242b33 11.98%, rgba(45, 52, 60, 0.38) 51.04%, #242b33 92.19%), url("./../img/header/header-bg.jpg");
+}
+@media screen and (max-width: 999px) {
+  .header {
+    min-height: unset;
+    row-gap: 50px;
+  }
 }
 
 .header__top-row {
@@ -209,6 +215,12 @@ a:hover {
   color: #D4C17F;
   font-weight: 700;
 }
+@media screen and (max-width: 999px) {
+  .header__title {
+    font-size: 32px;
+    padding-bottom: 100px;
+  }
+}
 
 .header__title-icon {
   position: absolute;
@@ -221,6 +233,14 @@ a:hover {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 30px;
+}
+@media screen and (max-width: 999px) {
+  .header__footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 30px;
+  }
 }
 
 .nav {
@@ -257,6 +277,14 @@ a:hover {
 }
 .info--tel::before {
   background-image: url("./../img/header/phone.svg");
+}
+@media screen and (max-width: 999px) {
+  .info {
+    font-size: 14px;
+  }
+  .info--map, .info--tel {
+    padding-left: 26px;
+  }
 }
 
 .benefits {

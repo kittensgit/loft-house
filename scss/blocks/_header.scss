@@ -7,8 +7,19 @@
     padding-bottom: 74px;
 
     min-height: 840px;
-    background: url('./../img/header/header-bg.jpg');
 
+    background: linear-gradient(
+        180deg,
+        #242b33 11.98%,
+        rgba(45, 52, 60, 0.38) 51.04%,
+        #242b33 92.19%
+    ),
+    url('./../img/header/header-bg.jpg');
+
+    @include mediaTablet {
+        min-height: unset; //сбрасываем стиль
+        row-gap: 50px;
+    }
 }
 
 
@@ -42,6 +53,11 @@
     color: $accent;
     font-weight: 700;
 
+
+    @include mediaTablet {
+        font-size: 32px;
+        padding-bottom: 100px;
+    }
 }
 
 .header__title-icon {
@@ -55,4 +71,11 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 30px;
+
+    @include mediaTablet {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 30px;
+    }
 }
