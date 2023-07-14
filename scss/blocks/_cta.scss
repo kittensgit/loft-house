@@ -1,6 +1,12 @@
 .cta {
     padding: 180px 0;
-    background: url('./../img/cta/cta-bg.jpg');
+
+    background: linear-gradient(180deg,
+            $dark 10.42%,
+            rgba(36, 43, 51, 0) 50.52%,
+            $dark 90.1%),
+        linear-gradient(0deg, rgba(36, 43, 51, 0.9), rgba(36, 43, 51, 0.9)),
+        url('./../img/cta/cta-bg.jpg'), #c4c4c4;
 
     @include mediaTablet {
         padding: 60px 0;
@@ -39,7 +45,7 @@
     gap: 35px 30px;
     align-items: center;
 
-    
+
     @include mediaTablet {
         grid-template-columns: 1fr;
     }
