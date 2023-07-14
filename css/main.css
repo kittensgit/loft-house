@@ -717,11 +717,21 @@ a:hover {
 }
 
 .feedback {
-  margin-bottom: 191px;
+  padding-bottom: 180px;
+}
+@media screen and (max-width: 959px) {
+  .feedback {
+    padding-bottom: 90px;
+  }
 }
 
 .feedback__title {
   margin-bottom: 38px;
+}
+@media screen and (max-width: 959px) {
+  .feedback__title {
+    margin-bottom: 19px;
+  }
 }
 
 .feedback__form {
@@ -729,6 +739,11 @@ a:hover {
   grid-template-columns: repeat(4, 1fr);
   gap: 30px;
   align-items: center;
+}
+@media screen and (max-width: 959px) {
+  .feedback__form {
+    grid-template-columns: 1fr;
+  }
 }
 
 .footer {
