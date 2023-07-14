@@ -627,6 +627,7 @@ a:hover {
 .video {
   text-align: center;
   position: relative;
+  overflow: hidden;
 }
 .video::after {
   content: "IV";
@@ -666,6 +667,12 @@ a:hover {
   top: 50%;
   transform: translate(-50%, -50%);
   transition: all 0.2s ease-in;
+}
+@media screen and (max-width: 959px) {
+  .video__icon {
+    width: 80px;
+    height: 80px;
+  }
 }
 
 .video__link:hover .video__icon {
