@@ -730,6 +730,11 @@ a:hover {
   background: #626262;
 }
 
+.map__iframe {
+  height: 358px;
+  width: 100%;
+}
+
 .feedback {
   padding-bottom: 180px;
 }
